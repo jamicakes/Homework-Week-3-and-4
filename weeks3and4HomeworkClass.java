@@ -193,11 +193,10 @@ System.out.println(willBuyDrink(isHotOutside,moneyInPocket));
     // and why you created it.
     // Method 7 
 
-// If toddler sleep hours are less than 10 print "It's going to be a hard day" if toddler sleep hours are greater than 
-// 10 hours print " if problems occur sleep is not to blame" -- I want the method to state it's gonna
-// be a rough day if the little ones didn't get enough sleep. 
+// If toddler sleep hours are less than 10 print "It's going to be a hard day, sorry." if toddler sleep hours are greater than 
+// 10 hours print "Got enough sleep." -- 
 int sleepHours = 11;
-//System.out.println(toddlerSleep(sleepHours));
+System.out.print(toddlerSleep(sleepHours));
     
   } // method 
   
@@ -286,20 +285,21 @@ else {
 }
 
 // Method 7 - Toddler sleep 
-//public static String toddlerSleep(int sleepHours) {
-//  String enoughSleep = "Got enough sleep";
-//  String notEnoughSleep = "It's going to be a hard day, sorry.";
-//  
-//  for (int i = 0; i <= sleepHours; i++) {
-//    int sleep = sleepHours;
-//    if (sleep < 10) {
-//       return  notEnoughSleep;
-//    }
-//  else if (i > 10) {
-//    return enoughSleep;
-//  }
+public static String toddlerSleep(int sleepHours) {
+  String enoughSleep = "Got enough sleep";
+  String notEnoughSleep = "It's going to be a hard day, sorry.";
+  
+
+    if (sleepHours < 10) {
+      return notEnoughSleep;  
+    }
+  else if (sleepHours > 10) {
+    return enoughSleep; 
+  }
+    return notEnoughSleep;
     
- 
+  }
+
     
   
   
